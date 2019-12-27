@@ -12,6 +12,7 @@ export class Navbar extends Component {
     handleToggle = () => {
         this.setState({isOpen:!this.state.isOpen})
     }
+
     render() {
         return (
             <nav className="navbar">
@@ -25,7 +26,7 @@ export class Navbar extends Component {
                             <FaAlignRight className="nav-icon" />
                         </button>
                     </div>
-                    {/* is this.state.isOpen set to true? if not, show nav-links and show-nav. If so, show nav-links */}
+                    {/* is this.state.isOpen set to true? If not, show nav-links show-nav here. If so, show nav-links */}
                     <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"}>
                         <li>
                             <Link to ="/">Home</Link>
