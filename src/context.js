@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import items from './data';
 import Client from './Contentful';
 
+// testing the contentful delivery API
 Client.getEntries().then(response => console.log(response.items));
 
 const RoomContext = React.createContext();
